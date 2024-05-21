@@ -4,6 +4,7 @@ import { Post } from './components/Post';
 import styles from './App.module.css';
 import './global.css';
 
+
 const posts = [
   {
     id: 1,
@@ -47,7 +48,7 @@ export function App() {
             <Post 
               key={post.id}
               author={post.author}
-              content={post.content}
+              content={post.content as []}
               publishedAt={post.publishedAt}
             />
             )
